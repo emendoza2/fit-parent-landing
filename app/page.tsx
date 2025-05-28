@@ -99,10 +99,10 @@ export default function HomePage() {
       <header className="bg-white shadow-sm border-b border-stone-200">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Image src="/logo.svg" alt="FIT Parent Logo" width={32} height={32} className="w-8 h-8 rounded-full bg-[#E7A034] p-1" />
+            <Image src="/logo.svg" alt="FIT Parent Logo" width={32} height={32} className="w-6 h-6 rounded-full bg-[#E7A034] p-1" />
             <span className="text-xl font-bold text-stone-900">FIT Parent</span>
           </div>
-          <Button asChild variant="outline" size="sm" className="border-amber-600 text-amber-700 hover:bg-amber-50">
+          <Button asChild variant="outline" size="sm" className="bg-amber-50 text-bg-edan-1 hover:bg-amber-50">
             <Link href="https://profile.fitparent.ph">Get Your Profile</Link>
           </Button>
         </div>
@@ -113,7 +113,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <div className="flex justify-center mb-6">
-              <Image src="/logo.svg" alt="FIT Parent Logo" width={64} height={64} className="w-16 h-16 rounded-full bg-[#E7A034] p-2" />
+              <Image src="/logo.svg" alt="FIT Parent Logo" width={64} height={64} className="w-24 h-24 rounded-full bg-[#E7A034] p-2" />
             </div>
             <Badge className="mb-6 bg-amber-100 text-amber-800 hover:bg-amber-100">Join the Movement</Badge>
             <h1 className="text-5xl md:text-6xl font-bold text-stone-900 mb-6">Family. Intentionality. Truth.</h1>
@@ -123,7 +123,7 @@ export default function HomePage() {
               share.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3">
+              <Button asChild size="lg" className="bg-edan-1 hover:bg-amber-700 text-white px-8 py-3">
                 <Link href="https://profile.fitparent.ph">
                   Get Your FIT Parent Profile
                   <ArrowRight className="ml-2 w-4 h-4" />

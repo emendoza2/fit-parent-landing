@@ -11,6 +11,16 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+			edan: {
+				1: '#E7A034',
+				2: '#E7A034',
+				3: '#E7A034',
+				4: '#E7A034',
+				5: '#E7A034',
+				6: '#E7A034',
+				7: '#E7A034',
+				8: '#E7A034',
+			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
