@@ -301,7 +301,7 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-12">
             {/* App Banner & QR */}
             <div className="flex flex-col items-center gap-6">
-              <div className="w-40 h-40 bg-white rounded-xl shadow flex items-center justify-center">
+              <div className="w-40 h-40 p-4 bg-white rounded-xl shadow flex items-center justify-center">
                 {/* Dynamically generated QR code */}
                 <QRCode value="https://fitparent.ph/store-redirect" size={160} />
               </div>
@@ -324,7 +324,7 @@ export default function HomePage() {
               <li>Access your FIT Parent profile and assessment results</li>
               <li>Daily check-ins and personalized challenges</li>
               <li>Track your parenting journey and progress</li>
-              <li>Connect with the FIT Parent community</li>
+              {/* <li>Connect with the FIT Parent community</li> */}
               <li>Get exclusive resources and updates</li>
             </ul>
             <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
