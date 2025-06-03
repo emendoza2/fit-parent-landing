@@ -282,7 +282,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-semibold text-stone-900 mb-3">Community</h3>
                 <p className="text-stone-600 text-sm">
-                  As more parents join the FIT Parent Community, this will create a natural ecosystem of parents journeying alongside other parents who share the same values and parenting principles to inspire family-focused, intentional, and truth-centered parenting.
+                  Be part of a movement of FIT Parents who are family-focused, intentional, and truth-seeking and journey together.
                 </p>
               </div>
             </div>
@@ -296,7 +296,7 @@ export default function HomePage() {
           <div className="max-w-5xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold text-stone-900 mb-6">Get the FIT Parent App</h2>
             <p className="text-lg text-stone-700 mb-8">
-              Experience FIT Parenting on the go! The FIT Parent app is available for both iOS and Android devices. Access your personalized dashboard, daily check-ins, and exclusive resources—anytime, anywhere.
+              Experience FIT Parenting on the go! The FIT Parent app is available for both iOS and Android devices. Access your personalized dashboard, daily check-ins, and curated resources—anytime, anywhere.
             </p>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-12">
@@ -344,7 +344,7 @@ export default function HomePage() {
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-stone-900 mb-6">Meet Our FIT Parent Ambassadors</h2>
             <p className="text-lg text-stone-700 text-center mb-12">
-              Real families sharing their parenting journeys and representing different parenting situations.
+              Real families sharing their parenting journeys and unique family dynamics.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
