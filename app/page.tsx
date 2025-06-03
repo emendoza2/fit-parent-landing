@@ -109,7 +109,7 @@ export default function HomePage() {
             <span className="text-xl font-bold text-stone-900">FIT Parent</span>
           </div>
           <Button asChild variant="outline" size="sm" className="border-amber-600 text-amber-700 hover:bg-amber-50">
-            <Link href="https://profile.fitparent.ph">Get Your Profile</Link>
+            <Link href="https://profile.fitparent.ph/assessment">Get Your Profile</Link>
           </Button>
         </div>
       </header>
@@ -129,12 +129,12 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3">
-                <Link href="https://profile.fitparent.ph">
+                <Link href="https://profile.fitparent.ph/assessment">
                   Get Your FIT Parent Profile
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
-              <p className="text-sm text-stone-600">Takes 30–60 minutes • Free Assessment</p>
+              <p className="text-sm text-stone-600">Takes 15–20 minutes • Free Assessment</p>
             </div>
           </div>
         </div>
@@ -194,7 +194,7 @@ export default function HomePage() {
 
       //     <div className="text-center">
       //       <Button asChild size="lg" className="bg-orange-600 hover:bg-orange-700 text-white">
-      //         <Link href="https://profile.fitparent.ph">
+      //         <Link href="https://profile.fitparent.ph/assessment">
       //           Take the FIT Parent Assessment
       //           <ArrowRight className="ml-2 w-4 h-4" />
       //         </Link>
@@ -233,7 +233,7 @@ export default function HomePage() {
 
           <div className="text-center">
             <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
-              <Link href="https://profile.fitparent.ph">
+              <Link href="https://profile.fitparent.ph/assessment">
                 Discover Your Parenting Profile
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
@@ -367,7 +367,7 @@ export default function HomePage() {
 
             <div className="text-center">
               <Button asChild size="lg" className="bg-orange-600 hover:bg-orange-700 text-white">
-                <Link href="https://profile.fitparent.ph">
+                <Link href="https://profile.fitparent.ph/assessment">
                   Start Your FIT Parent Journey
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
@@ -413,7 +413,7 @@ export default function HomePage() {
 
             <div className="text-center">
               <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
-                <Link href="https://profile.fitparent.ph">
+                <Link href="https://profile.fitparent.ph/assessment">
                   Join the Movement - Get Your Profile
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
@@ -434,7 +434,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button asChild size="lg" className="bg-white text-amber-700 hover:bg-stone-100 px-8 py-3">
-                <Link href="https://profile.fitparent.ph">
+                <Link href="https://profile.fitparent.ph/assessment">
                   Get Your FIT Parent Profile Now
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
