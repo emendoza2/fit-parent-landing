@@ -17,6 +17,8 @@ import {
   HandHeart,
   ThumbsUp,
   Coffee,
+  BookMarked,
+  Search,
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
@@ -25,7 +27,7 @@ import QRCode from "react-qr-code"
 const dimensions = [
   {
     title: "Truth-Seeking",
-    icon: BookOpen,
+    icon: Search,
     description: "Build your family's foundation on biblical truth and eternal values.",
     color: "bg-amber-100 text-amber-800",
   },
@@ -124,8 +126,7 @@ export default function HomePage() {
             <Badge className="mb-6 bg-amber-100 text-amber-800 hover:bg-amber-100">Join the Movement</Badge>
             <h1 className="text-5xl md:text-6xl font-bold text-stone-900 mb-6">Family. Intentionality. Truth.</h1>
             <p className="text-xl text-stone-700 mb-8 max-w-3xl mx-auto">
-              Welcome to FIT Parent - a movement that advocates for healthy parenting that is family-focused,
-              intentional, and truth-centered. Discover your parenting strengths and get a personalized profile that gives you a starting point for your FIT Parent journey.
+              Discover your parenting strengths and get your personalized FIT Parent Profile.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3">
@@ -208,10 +209,10 @@ export default function HomePage() {
       <section className="py-16 bg-stone-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-stone-900 mb-6">The 10 Dimensions of FIT Parenting</h2>
-            <p className="text-lg text-stone-700">
-              These principles encourage you to be:
-            </p>
+            <h2 className="text-3xl font-bold text-stone-900 mb-6">The 10 Dimensions of FIT Parenting encourage you to be:</h2>
+            {/* <p className="text-lg text-stone-700">
+              The 10 Dimensions of:
+            </p> */}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mb-12">
@@ -250,7 +251,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BookOpen className="w-8 h-8 text-amber-600" />
+                  <BookMarked className="w-8 h-8 text-amber-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-stone-900 mb-3">Biblical</h3>
                 <p className="text-stone-600 text-sm">
@@ -263,7 +264,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-semibold text-stone-900 mb-3">Doable</h3>
                 <p className="text-stone-600 text-sm">
-                  The encouragement is "get better today." You will be given practical, bite-sized changes and fixes to work on that are doable. Since parenting is a journey, the goal is not to be perfect, but to progress daily.
+                  The encouragement is "get better today." You will be given practical, bite-sized changes and fixes to work on that are doable. Since parenting is a journey, the goal is not perfection but daily progress.
                 </p>
               </div>
               <div className="text-center">
@@ -439,7 +440,7 @@ export default function HomePage() {
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
-              <p className="text-amber-100 text-sm">Free • Takes 30-60 minutes • Shareable results</p>
+              <p className="text-amber-100 text-sm">Free • Takes 15&ndash;20 minutes • Shareable results</p>
             </div>
           </div>
         </div>
