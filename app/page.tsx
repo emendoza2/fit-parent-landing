@@ -482,6 +482,11 @@ export default function HomePage() {
           </div>
           <div className="border-t border-stone-800 mt-8 pt-8 text-center text-stone-400">
             <p>&copy; {new Date().getFullYear()} FIT Parent. All rights reserved.</p>
+            <div className="mt-2 flex flex-col md:flex-row gap-2 justify-center items-center text-xs">
+              <Link href="https://profile.fitparent.ph/privacy" target="_blank" rel="noopener noreferrer" className="hover:underline text-stone-400">Privacy Policy</Link>
+              <span className="hidden md:inline">&middot;</span>
+              <Link href="https://profile.fitparent.ph/terms" target="_blank" rel="noopener noreferrer" className="hover:underline text-stone-400">Terms of Service</Link>
+            </div>
           </div>
         </div>
       </footer>
