@@ -322,10 +322,10 @@ export default function HomePage() {
             <h3 className="text-xl font-semibold text-stone-900 mb-3">Why use the app?</h3>
             <ul className="text-stone-700 text-base mb-6 list-disc list-inside text-left inline-block">
               <li>Access your FIT Parent profile and assessment results</li>
-              <li>Daily check-ins and personalized challenges</li>
+              <li>Check in daily with personalized challenges</li>
               <li>Track your parenting journey and progress</li>
               {/* <li>Connect with the FIT Parent community</li> */}
-              <li>Get exclusive resources and updates</li>
+              <li>Receive helpful resources and updates</li>
             </ul>
             <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
               <a href="https://apps.apple.com/app/fitparent" target="_blank" rel="noopener noreferrer">
