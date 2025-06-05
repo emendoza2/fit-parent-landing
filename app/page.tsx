@@ -91,7 +91,7 @@ const dimensions = [
 
 const ambassadors = [
   { name: "Ken and Mafe Carangue" },
-  { name: "Miguel and Jerika Garcia" },
+  { name: "Miguel and Jerika Aguilar" },
   { name: "Ryan and Isabelle Gallagher" },
   { name: "Edric and Joy Mendoza" },
   { name: "Gian and Joy Sotto" },
@@ -319,10 +319,10 @@ export default function HomePage() {
             </div>
             {/* App Store Links */}
             <div className="flex flex-col items-center gap-4">
-              <a href="https://apps.apple.com/app/fitparent" target="_blank" rel="noopener noreferrer" className="inline-block">
+              <a href="https://testflight.apple.com/join/c6QWRe9z" target="_blank" rel="noopener noreferrer" className="inline-block">
                 <Image src="/app-store-dl.svg" alt="Download on the App Store" width={180} height={54} className="mb-2" />
               </a>
-              <a href="https://play.google.com/store/apps/details?id=com.fitparent" target="_blank" rel="noopener noreferrer" className="inline-block">
+              <a href="https://play.google.com/store/apps/details?id=ph.fitparent.app" target="_blank" rel="noopener noreferrer" className="inline-block">
                 <Image src="/google-play-dl.svg" alt="Get it on Google Play" width={180} height={54} />
               </a>
               <p className="text-champagne-600 text-sm h-6 flex items-center">Or search "FIT Parent" in your app store</p>
@@ -337,12 +337,12 @@ export default function HomePage() {
               {/* <li>Connect with the FIT Parent community</li> */}
               <li>Receive helpful resources and updates</li>
             </ul>
-            <Button asChild size="lg" className="bg-orange-400 hover:bg-orange-600 text-champagne-50">
+            {/* <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
               <a href="https://apps.apple.com/app/fitparent" target="_blank" rel="noopener noreferrer">
                 Download the FIT Parent App
                 <ArrowRight className="ml-2 w-4 h-4" />
               </a>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
