@@ -91,7 +91,7 @@ const dimensions = [
 
 const ambassadors = [
   { name: "Ken and Mafe Carangue" },
-  { name: "Miguel and Jerika Garcia" },
+  { name: "Miguel and Jerika Aguilar" },
   { name: "Ryan and Isabelle Gallagher" },
   { name: "Edric and Joy Mendoza" },
   { name: "Gian and Joy Sotto" },
@@ -273,7 +273,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-semibold text-stone-900 mb-3">Personalized</h3>
                 <p className="text-stone-600 text-sm">
-                  Similar to a health fitness tracker, you will take use the FIT Parent Assessment Tool to give you an overview of your FIT Parent Score. Based on your results, the FIT Parent App will lead you to challenges, resources, and material to improve your FIT Parent Score. As you interact with and complete these, your score will update and improve.
+                  Similar to a health fitness tracker, you will start with the FIT Parent profile tool to get an overview of your strengths and areas of improvement based on the 10 FIT Dimensions of Parenting. Sign up for the free FIT Parent App, to receive your full profile along with personalized daily challenges and resources that will impact your Daily Wellness Score.
                 </p>
               </div>
               <div className="text-center">
@@ -310,10 +310,10 @@ export default function HomePage() {
             </div>
             {/* App Store Links */}
             <div className="flex flex-col items-center gap-4">
-              <a href="https://apps.apple.com/app/fitparent" target="_blank" rel="noopener noreferrer" className="inline-block">
+              <a href="https://testflight.apple.com/join/c6QWRe9z" target="_blank" rel="noopener noreferrer" className="inline-block">
                 <Image src="/app-store-dl.svg" alt="Download on the App Store" width={180} height={54} className="mb-2" />
               </a>
-              <a href="https://play.google.com/store/apps/details?id=com.fitparent" target="_blank" rel="noopener noreferrer" className="inline-block">
+              <a href="https://play.google.com/store/apps/details?id=ph.fitparent.app" target="_blank" rel="noopener noreferrer" className="inline-block">
                 <Image src="/google-play-dl.svg" alt="Get it on Google Play" width={180} height={54} />
               </a>
               <p className="text-stone-500 text-xs mt-2">Or search "FIT Parent" in your app store</p>
@@ -328,12 +328,12 @@ export default function HomePage() {
               {/* <li>Connect with the FIT Parent community</li> */}
               <li>Receive helpful resources and updates</li>
             </ul>
-            <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
+            {/* <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
               <a href="https://apps.apple.com/app/fitparent" target="_blank" rel="noopener noreferrer">
                 Download the FIT Parent App
                 <ArrowRight className="ml-2 w-4 h-4" />
               </a>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
