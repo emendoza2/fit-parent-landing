@@ -2,8 +2,8 @@
 import { useEffect } from "react"
 import { useRouter } from "next/navigation"
 
-const APPLE_STORE_URL = "https://apps.apple.com/app/fitparent"
-const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.fitparent"
+const APPLE_STORE_URL = "https://testflight.apple.com/join/c6QWRe9z"
+const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=ph.fitparent.app"
 const HOMEPAGE_URL = "https://fitparent.ph/"
 
 export default function StoreRedirectPage() {
