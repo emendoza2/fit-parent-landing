@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Header } from "@/components/ui/header"
+import { Footer } from "@/components/ui/footer"
+import { AppDownloadBanner } from "@/components/ui/app-download-banner"
 import {
   Heart,
   Users,
@@ -103,18 +106,7 @@ const ambassadors = [
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-champagne-50">
-      {/* Header */}
-      <header className="bg-champagne-50 shadow-sm border-b border-champagne-200">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Image src="/logo.svg" alt="FIT Parent Logo" width={32} height={32} className="w-6 h-6 rounded-full bg-[#E7A034] p-1" />
-            <span className="text-xl font-bold text-champagne-900">FIT Parent</span>
-          </div>
-          <Button asChild variant="outline" size="sm" className="border-orange-600 text-orange-700 hover:bg-orange-50">
-            <Link href="https://profile.fitparent.ph/assessment">Get Your Profile</Link>
-          </Button>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="bg-brown-100 py-20">
@@ -141,78 +133,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* What is FIT Parent */}
-      {
-      //   <section className="py-16 bg-champagne-50">
-      //   <div className="container mx-auto px-4">
-      //     <div className="max-w-4xl mx-auto text-center mb-12">
-      //       <h2 className="text-3xl font-bold text-champagne-900 mb-6">What is FIT Parent?</h2>
-      //       <p className="text-lg text-champagne-700 mb-8">
-      //         FIT Parent is a non-profit organization that advocates for healthy parenting through three core
-      //         principles:
-      //       </p>
-      //     </div>
-
-      //     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
-      //       <Card className="border-orange-200 hover:shadow-lg transition-shadow">
-      //         <CardContent className="p-6 text-center">
-      //           <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-      //             <Users className="w-8 h-8 text-orange-600" />
-      //           </div>
-      //           <h3 className="text-xl font-semibold text-champagne-900 mb-3">Family-Focused</h3>
-      //           <p className="text-champagne-600">
-      //             Parents prioritize their family's well-being and needs so that family members feel loved and valued.
-      //           </p>
-      //         </CardContent>
-      //       </Card>
-
-      //       <Card className="border-orange-200 hover:shadow-lg transition-shadow">
-      //         <CardContent className="p-6 text-center">
-      //           <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-      //             <Target className="w-8 h-8 text-orange-600" />
-      //           </div>
-      //           <h3 className="text-xl font-semibold text-champagne-900 mb-3">Intentional</h3>
-      //           <p className="text-champagne-600">
-      //             Parents actively plan, act on, and pursue the right principles, values, and goals while raising their
-      //             children.
-      //           </p>
-      //         </CardContent>
-      //       </Card>
-
-      //       <Card className="border-yellow-200 hover:shadow-lg transition-shadow">
-      //         <CardContent className="p-6 text-center">
-      //           <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-      //             <BookOpen className="w-8 h-8 text-yellow-600" />
-      //           </div>
-      //           <h3 className="text-xl font-semibold text-champagne-900 mb-3">Truth-Centered</h3>
-      //           <p className="text-champagne-600">
-      //             Parents teach, train, and disciple their children to be people of character who discern right from
-      //             wrong.
-      //           </p>
-      //         </CardContent>
-      //       </Card>
-      //     </div>
-
-      //     <div className="text-center">
-      //       <Button asChild size="lg" className="bg-orange-600 hover:bg-orange-700 text-champagne-50">
-      //         <Link href="https://profile.fitparent.ph/assessment">
-      //           Take the FIT Parent Assessment
-      //           <ArrowRight className="ml-2 w-4 h-4" />
-      //         </Link>
-      //       </Button>
-      //     </div>
-      //   </div>
-      // </section>
-}
-
       {/* 10 Dimensions */}
       <section className="py-16 bg-champagne-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold text-champagne-900 mb-6">The 10 Dimensions of FIT Parenting encourage you to be:</h2>
-            {/* <p className="text-lg text-champagne-700">
-              The 10 Dimensions of:
-            </p> */}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mb-12">
@@ -300,52 +225,7 @@ export default function HomePage() {
       </section>
 
       {/* FIT Parent App Section */}
-      <section className="py-16 bg-brown-100">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-champagne-900 mb-6">Get the FIT Parent App</h2>
-            <p className="text-lg text-champagne-700 mb-8">
-              Experience FIT Parenting on the go! The FIT Parent app is available for both iOS and Android devices. Access your personalized dashboard, daily check-ins, and curated resources—anytime, anywhere.
-            </p>
-          </div>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-12">
-            {/* App Banner & QR */}
-            <div className="flex flex-col items-center gap-6">
-              <div className="w-40 h-40 p-4 bg-champagne-50 rounded-xl shadow flex items-center justify-center">
-                {/* Dynamically generated QR code */}
-                <QRCode value="https://fitparent.ph/store-redirect" size={160} />
-              </div>
-              <p className="text-champagne-600 text-sm">Scan to download on iOS or Android</p>
-            </div>
-            {/* App Store Links */}
-            <div className="flex flex-col items-center gap-4">
-              <a href="https://testflight.apple.com/join/c6QWRe9z" target="_blank" rel="noopener noreferrer" className="inline-block">
-                <Image src="/app-store-dl.svg" alt="Download on the App Store" width={180} height={54} className="mb-2" />
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=ph.fitparent.app" target="_blank" rel="noopener noreferrer" className="inline-block">
-                <Image src="/google-play-dl.svg" alt="Get it on Google Play" width={180} height={54} />
-              </a>
-              <p className="text-champagne-600 text-sm h-6 flex items-center">Or search "FIT Parent" in your app store</p>
-            </div>
-          </div>
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-xl font-semibold text-champagne-900 mb-3">Why use the app?</h3>
-            <ul className="text-champagne-700 text-base mb-6 list-disc list-inside text-left inline-block">
-              <li>Access your FIT Parent profile and assessment results</li>
-              <li>Check in daily with personalized challenges</li>
-              <li>Track your parenting journey and progress</li>
-              {/* <li>Connect with the FIT Parent community</li> */}
-              <li>Receive helpful resources and updates</li>
-            </ul>
-            {/* <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
-              <a href="https://apps.apple.com/app/fitparent" target="_blank" rel="noopener noreferrer">
-                Download the FIT Parent App
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </a>
-            </Button> */}
-          </div>
-        </div>
-      </section>
+      <AppDownloadBanner />
 
       {/* FIT Parent Ambassadors */}
       <section className="py-16 bg-champagne-50">
@@ -387,52 +267,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Mission & Vision */}
-      {/* <section className="py-16 bg-champagne-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-champagne-900 mb-12">Our Mission & Vision</h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <Card className="border-orange-200">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Target className="w-8 h-8 text-orange-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-champagne-900 mb-4">Mission</h3>
-                  <p className="text-champagne-700">
-                    To provide parents with the tools to become a FIT Parent – family-focused, intentional, and
-                    truth-centered.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-orange-200">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Heart className="w-8 h-8 text-orange-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-champagne-900 mb-4">Vision</h3>
-                  <p className="text-champagne-700">
-                    To create a movement of FIT Parents who will disciple their families and transform the Philippines
-                    for Jesus Christ.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="text-center">
-              <Button asChild size="lg" className="bg-orange-600 hover:bg-orange-700 text-champagne-50">
-                <Link href="https://profile.fitparent.ph/assessment">
-                  Join the Movement - Get Your Profile
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* Final Call to Action */}
       <section className="py-20 bg-brown-600">
         <div className="container mx-auto px-4 text-center">
@@ -455,50 +289,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-brown-900 text-champagne-50 py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <Image src="/logo.svg" alt="FIT Parent Logo" width={32} height={32} className="w-8 h-8 rounded-full bg-[#E7A034] p-1" />
-                <span className="text-xl font-bold">FIT Parent</span>
-              </div>
-              <p className="text-champagne-200">
-                Join a movement that advocates for healthy parenting that is family-focused, intentional, and
-                truth-centered.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Contact</h3>
-              <p className="text-champagne-200">Email: hello@fitparent.ph</p>
-              <p className="text-champagne-200">Website: www.fitparent.ph</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
-              <div className="flex space-x-4">
-                <Link href="https://www.facebook.com/people/FIT-Parent/61576955067819/" className="text-champagne-200 hover:text-champagne-50 transition-colors" target="_blank" rel="noopener noreferrer">
-                  Facebook
-                </Link>
-                <Link href="https://www.instagram.com/fitparent.ph" className="text-champagne-200 hover:text-champagne-50 transition-colors" target="_blank" rel="noopener noreferrer">
-                  Instagram
-                </Link>
-                <Link href="https://www.tiktok.com/@fitparent.ph" className="text-champagne-200 hover:text-champagne-50 transition-colors" target="_blank" rel="noopener noreferrer">
-                  TikTok
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-champagne-800 mt-8 pt-8 text-center text-champagne-200">
-            <p>&copy; {new Date().getFullYear()} FIT Parent. All rights reserved.</p>
-            <div className="mt-2 flex flex-col md:flex-row gap-2 justify-center items-center text-xs">
-              <Link href="https://profile.fitparent.ph/privacy" target="_blank" rel="noopener noreferrer" className="hover:underline text-champagne-200">Privacy Policy</Link>
-              <span className="hidden md:inline">&middot;</span>
-              <Link href="https://profile.fitparent.ph/terms" target="_blank" rel="noopener noreferrer" className="hover:underline text-champagne-200">Terms of Service</Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
